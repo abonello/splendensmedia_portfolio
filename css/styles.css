@@ -32,6 +32,7 @@ header h2 {
     font-family: 'Bubblegum Sans', cursive;
     text-align: center;
 }
+
 header p {
     text-align: center;
 }
@@ -50,7 +51,6 @@ span.fish a:link, span.fish a:visited {
     background-image: url(../images/bettaSplendensSprite.png);
     -webkit-animation: swim 0.9s steps(8) infinite;
     animation: swim 0.9s steps(8) infinite;
-    
 }
 
 @-webkit-keyframes swim {
@@ -173,4 +173,3 @@ footer {
         top: 0;
     }
 }
-
