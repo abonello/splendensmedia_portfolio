@@ -10,6 +10,40 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+        <script>
+            function flipBox(el_f, el_b){
+                var elem_f = document.getElementById(el_f);
+                var elem_b = document.getElementById(el_b);
+
+                var angle_elem_f = rotate_degree(elem_f);
+                console.log(angle_elem_f);
+                var angle_elem_b = rotate_degree(elem_b);
+                console.log(angle_elem_b);
+
+                if (angle_elem_f == 0) {
+                    elem_f.style.transform = "perspective(1000px) rotateY(-180deg)";
+                    elem_b.style.transform = "perspective(1000px) rotateY(0deg)";
+                } else if (angle_elem_f == 180) {
+                    elem_f.style.transform = "perspective(1000px) rotateY(0deg)";
+                    elem_b.style.transform = "perspective(1000px) rotateY(180deg)";
+                }
+                // elem_f.style.transform = "perspective(1000px) rotateY(-180deg)";
+                // elem_b.style.transform = "perspective(1000px) rotateY(0deg)";
+            }
+
+            function rotate_degree(obj) {
+                var st = window.getComputedStyle(obj, null);
+                var matrix = st.getPropertyValue("transform");
+                // console.log(matrix);
+                if(matrix !== 'none') {
+                    var values = matrix.split('(')[1].split(')')[0].split(',');
+                    var a = values[0];
+                    var b = values[1];
+                    var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
+                } else { var angle = 0; }
+                return (angle < 0) ? angle +=360 : angle;
+            }
+        </script>
     </head>
 <body>
     <header class="container-fluid main-header">
@@ -33,6 +67,56 @@
     </header>
 
     <div class="container main">
+        <div class="row">
+            <!-- <div class="buttons">
+                <button onclick="flipBox('box1_front', 'box1_back')">Flip Box 1</button>
+                <button onclick="flipBox('box2_front', 'box2_back')">Flip Box 2</button>
+                <button onclick="flipBox('box3_front', 'box3_back')">Flip Box 3</button>
+            </div> -->
+            <div class="flip3D">
+                <div class="card back slow" id="box1_back">
+                        <h3>Independent Music Professional</h3>
+                        <p>This webpage is my own site related to my music-related activities. It has brief information about the different activities I do. It also has a few examples of my compositions.</p>
+                        <p><strong>Technologies used</strong></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>jQuery</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <a href="https://github.com/abonello/project-1" target="_blank">Github Repository</a>
+                        <br>
+                        <a href="http://www.anthonybonello.co.uk" target="_blank">Deployment</a>
+                    <div class="card-button">
+                        <button onclick="flipBox('box1_front', 'box1_back')">Flip</button>
+                    </div>
+                </div>
+                <div class="card front slow" id="box1_front">
+                    <h3>Independent Music Professional</h3>
+                    <p>This is my website related to my music activities.</p>
+                    <img src="images/Screenshot 2018-08-15 14.11.33.anthonybonello.png" alt="anthonybonello.co.uk">
+                    <p>Flip the card for more detail.</p>
+                    <div class="card-button">
+                        <button onclick="flipBox('box1_front', 'box1_back')">Flip</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flip3D">
+                    <div class="card back slow" id="box2_back">
+                        <h2>Independent Music Professional</h2>
+                        <p>This content will be diplayed on the <strong>BACK</strong>.</p>
+                        <img src="images/butterfly.jpg" alt="butterfly">
+                        <button onclick="flipBox('box2_front', 'box2_back')">Flip Box 1</button>
+                    </div>
+                    <div class="card front slow" id="box2_front">
+                        <h2>Independent Music Professional</h2>
+                        <p>This is my website related to my music activities.</p>
+                        <img src="images/Screenshot 2018-08-15 14.11.33.anthonybonello.png" alt="anthonybonello.co.uk">
+                        <button onclick="flipBox('box2_front', 'box2_back')">Flip Box 1</button>
+                    </div>
+                </div>
+        </div>
         <div class="row main-row">
 
         <h2>The following are some examples of web pages that I have developed</h2>
@@ -52,12 +136,12 @@
                     <td>HTML CSS JavaScript Bootstrap</td>
                     <td>Practice in all three languages but especially JavaScript</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th><a href="https://abonello.github.io/JumbotronExperiment/" target="_blank">Exploring Bootstrap</a></th>
                     <td><a href="https://github.com/abonello/JumbotronExperiment" target="_blank">GitHub Repository</a></td>
                     <td>HTML CSS Bootstrap</td>
                     <td>This project started as practice in using bootstrap and developed into something that later I will use to rebuild my website as a musician.</td>
-                </tr>
+                </tr> -->
                 <tr>
                     <th><a href="http://angularTutorial.anthonybonello.co.uk" target="_blank">Exploring AngularJS</a></th>
                     <td>-</td>
