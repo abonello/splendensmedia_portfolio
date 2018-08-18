@@ -46,6 +46,7 @@
         </script>
     </head>
 <body>
+    <img id="bg-img01" src="images/20180818_124330small-min.png" alt="background image" />
     <header class="container-fluid main-header">
     <!--<header class="container-fluid">-->
         <div class="row">
@@ -62,17 +63,17 @@
             </div>
         </div>
     </header>
-
+    
     <div class="container main">
+            
         <div class="row">
-            <!-- <div class="buttons">
-                <button onclick="flipBox('box1_front', 'box1_back')">Flip Box 1</button>
-                <button onclick="flipBox('box2_front', 'box2_back')">Flip Box 2</button>
-                <button onclick="flipBox('box3_front', 'box3_back')">Flip Box 3</button>
-            </div> -->
-            <!-- anthonybonello.co.uk -->
-            <div class="flip3D">
-                <div class="card back slow" id="box1_back">
+            <heading class="sectionTitle"><h2>The following are some examples of web pages that I have developed</h2>
+                <p>They are part of my web development portfolio:</p>
+            </heading>
+            <div class="col-lg-6">
+                <!-- anthonybonello.co.uk -->
+                <div class="flip3D">
+                    <div class="card back slow" id="box1_back">
                         <h3>Independent Music Professional</h3>
                         <p>This webpage is my own site related to my music-related activities. It has brief information about the different activities I do. It also has a few examples of my compositions. It makes use of parallax effect background.</p>
                         <p><strong>Technologies used</strong></p>
@@ -85,177 +86,187 @@
                         <a href="https://github.com/abonello/project-1" target="_blank">Github Repository</a>
                         <br>
                         <a href="http://www.anthonybonello.co.uk" target="_blank">Deployment</a>
-                    <div class="card-button">
-                        <button onclick="flipBox('box1_front', 'box1_back')">Flip</button>
+                        <div class="card-button">
+                            <button onclick="flipBox('box1_front', 'box1_back')">Flip</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card front slow" id="box1_front">
-                    <h3>Independent Music Professional</h3>
-                    <p>This is my website related to my music activities.</p>
-                    <img src="images/Screenshot 2018-08-15 14.11.33.anthonybonello.png" alt="anthonybonello.co.uk">
-                    <p>Flip the card for more detail.</p>
-                    <div class="card-button">
-                        <button onclick="flipBox('box1_front', 'box1_back')">Flip</button>
-                    </div>
-                    
-                </div>
-            </div>
-            <!-- charlie chaplin -->
-            <div class="flip3D">
-                <div class="card back slow" id="box2_back">
-                    <h3>Charlie Chaplin</h3>
-                    <p>I built this tribute page as a practice in controlling the flow of content using jQuery. It is based on a codepen exercise. An important feature of this page is the film strip which moves in opposite direction to the page.</p>
-                    <p><strong>Technologies used</strong></p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>jQuery</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                    <a href="https://github.com/abonello/Chaplin-Tribute" target="_blank">Github Repository</a>
-                    <br>
-                    <a href="http://www.chaplin.anthonybonello.co.uk" target="_blank">Deployment</a>
-                    <div class="card-button">
-                        <button onclick="flipBox('box2_front', 'box2_back')">Flip</button>
-                    </div>
-                </div>
-                <div class="card front slow" id="box2_front">
-                    <h3>Charlie Chaplin</h3>
-                    <p>Tribute page to Charlie Chaplin and his work.</p>
-                    <img src="images/Screenshot 2018-08-17 16.07.48.chaliechaplin.png" alt="charlie chaplin tribute site">
-                    <p>Flip the card for more detail.</p>
-                    <div class="card-button">
-                        <button onclick="flipBox('box2_front', 'box2_back')">Flip</button>
+                    <div class="card front slow" id="box1_front">
+                        <h3>Independent Music Professional</h3>
+                        <p>This is my website related to my music activities.</p>
+                        <img src="images/Screenshot 2018-08-15 14.11.33.anthonybonello.png" alt="anthonybonello.co.uk">
+                        <p>Flip the card for more detail.</p>
+                        <div class="card-button">
+                            <button onclick="flipBox('box1_front', 'box1_back')">Flip</button>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-            <!-- simon game -->
-            <div class="flip3D">
-                <div class="card back slow" id="box3_back">
-                    <h3>Simon Game</h3>
-                    <p>I recreated simon game which runs in a browser. As the game progresses there are various aspects of the GUI which change, The color of the title on the game "console" changes, and a number shows the length of the sequence. There is also an option to change the set of sounds. Two are implemented at present but other sets can be added. If an error occurs "Err" is displayed and a short tune is played using the current sound set.</p>
-                    <table style="width:100%">
-                        <thead><th style="text-align: center" colspan="3">Technologies used</th></thead>
-                        <tr>
-                            <td width="33%">HTML</td>
-                            <td  width="33%">CSS</td>
-                            <td  width="33%">jQuery</td>
-                        </tr>
-                    </table>
-                    <a href="https://github.com/abonello/simon-game" target="_blank">Github Repository</a>
-                    <br>
-                    <a href="https://abonello.github.io/simon-game/" target="_blank">Deployment</a>
-                    <div class="card-button">
-                        <button onclick="flipBox('box3_front', 'box3_back')">Flip</button>
+            <div class="col-lg-6">
+                <!-- charlie chaplin -->
+                <div class="flip3D">
+                    <div class="card back slow" id="box2_back">
+                        <h3>Charlie Chaplin</h3>
+                        <p>I built this tribute page as a practice in controlling the flow of content using jQuery. It is based on a codepen exercise. An important feature of this page is the film strip which moves in opposite direction to the page.</p>
+                        <p><strong>Technologies used</strong></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>jQuery</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <a href="https://github.com/abonello/Chaplin-Tribute" target="_blank">Github Repository</a>
+                        <br>
+                        <a href="http://www.chaplin.anthonybonello.co.uk" target="_blank">Deployment</a>
+                        <div class="card-button">
+                            <button onclick="flipBox('box2_front', 'box2_back')">Flip</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card front slow" id="box3_front">
-                    <h3>Simon Game</h3>
-                    <p>This is a remake of the classical Simon game.</p>
-                    <img src="images/Screenshot 2018-08-18 08.02.39.simongame.png" alt="Simon Game">
-                    <p>Flip the card for more detail.</p>
-                    <div class="card-button">
-                        <button onclick="flipBox('box3_front', 'box3_back')">Flip</button>
-                    </div>
-                </div>
-            </div>
-            <!-- addition game -->
-            <div class="flip3D">
-                <div class="card back slow" id="box4_back">
-                    <h3>Addition Game</h3>
-                    <p>This project's purpose is to explore how to get more than one user logged in at one time without interfeering. I used object-oriented design. I also used a JSON to store the data about the users and games played. Additionally, if a user is logged in and tries to log in somewhere else, be it a different tab on the same browser or a totally different device, the user will be warned and given the option to proceed, thus deleting the previous session or abort the current log in attempt. I also implemented storing the hashes for the passwords.</p>
-                    <table style="width:100%">
-                        <thead><th style="text-align: center" colspan="3">Technologies used</th></thead>
-                        <tr>
-                            <td width="25%">HTML</td>
-                            <td width="25%">CSS</td>
-                            <td width="25%">jQuery</td>
-                            <td width="25%">Bootstrap</td>
-                        </tr>
-                        <tr>
-                            <td width="25%">Python</td>
-                            <td width="25%">Flask</td>
-                            <td width="25%">Jinja</td>
-                            <td width="25%">JSON</td>  
-                        </tr>
-                        <tr>
-                            <td colspan="2"><a href="https://github.com/abonello/addition_game" target="_blank">Github Repository</a></td>
-                            <td colspan="2"><a href="http://my-addition-game.herokuapp.com/" target="_blank">Deployment on Heroku</a></td>
-                        </tr>
-                    </table>
-
-                    
-                    <div class="card-button">
-                        <button onclick="flipBox('box4_front', 'box4_back')">Flip</button>
-                    </div>
-                </div>
-                <div class="card front slow" id="box4_front">
-                    <h3>Addition Game</h3>
-                    <p>An experimental site to get multiple users logged in.</p>
-                    <img src="images/Screenshot 2018-08-18 11.56.57.additiongame.png" alt="addition game">
-                    <p>Flip the card for more detail.</p>
-                    <div class="card-button">
-                        <button onclick="flipBox('box4_front', 'box4_back')">Flip</button>
+                    <div class="card front slow" id="box2_front">
+                        <h3>Charlie Chaplin</h3>
+                        <p>Tribute page to Charlie Chaplin and his work.</p>
+                        <img src="images/Screenshot 2018-08-17 16.07.48.chaliechaplin.png" alt="charlie chaplin tribute site">
+                        <p>Flip the card for more detail.</p>
+                        <div class="card-button">
+                            <button onclick="flipBox('box2_front', 'box2_back')">Flip</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- webapp - audio -->
-            <div class="flip3D">
-                <div class="card back slow" id="box5_back">
-                    <h3>WebApp Audio</h3>
-                    <p>I recreated simon game which runs in a browser. As the game progresses there are various aspects of the GUI which change, The color of the title on the game "console" changes, and a number shows the length of the sequence. There is also an option to change the set of sounds. Two are implemented at present but other sets can be added. If an error occurs "Err" is displayed and a short tune is played using the current sound set.</p>
-                    <table style="width:100%">
-                        <thead><th style="text-align: center" colspan="3">Technologies used</th></thead>
-                        <tr>
-                            <td width="33%">HTML</td>
-                            <td  width="33%">CSS</td>
-                            <td  width="33%">jQuery</td>
-                        </tr>
-                    </table>
-                    <a href="https://github.com/abonello/simon-game" target="_blank">Github Repository</a>
-                    <br>
-                    <a href="https://abonello.github.io/simon-game/" target="_blank">Deployment</a>
-                    <div class="card-button">
-                        <button onclick="flipBox('box5_front', 'box5_back')">Flip</button>
+            <div class="col-lg-6">
+                <!-- simon game -->
+                <div class="flip3D">
+                    <div class="card back slow" id="box3_back">
+                        <h3>Simon Game</h3>
+                        <p>I recreated simon game which runs in a browser. As the game progresses there are various aspects of the GUI which change, The color of the title on the game "console" changes, and a number shows the length of the sequence. There is also an option to change the set of sounds. Two are implemented at present but other sets can be added. If an error occurs "Err" is displayed and a short tune is played using the current sound set.</p>
+                        <table style="width:100%">
+                            <thead><th style="text-align: center" colspan="3">Technologies used</th></thead>
+                            <tr>
+                                <td width="33%">HTML</td>
+                                <td  width="33%">CSS</td>
+                                <td  width="33%">jQuery</td>
+                            </tr>
+                        </table>
+                        <a href="https://github.com/abonello/simon-game" target="_blank">Github Repository</a>
+                        <br>
+                        <a href="https://abonello.github.io/simon-game/" target="_blank">Deployment</a>
+                        <div class="card-button">
+                            <button onclick="flipBox('box3_front', 'box3_back')">Flip</button>
+                        </div>
                     </div>
-                </div>
-                <div class="card front slow" id="box5_front">
-                    <h3>WebApp Audio</h3>
-                    <p>This is a remake of the classical Simon game.</p>
-                    <img src="images/Screenshot 2018-08-18 08.02.39.simongame.png" alt="anthonybonello.co.uk">
-                    <p>Flip the card for more detail.</p>
-                    <div class="card-button">
-                        <button onclick="flipBox('box5_front', 'box5_back')">Flip</button>
+                    <div class="card front slow" id="box3_front">
+                        <h3>Simon Game</h3>
+                        <p>This is a remake of the classical Simon game.</p>
+                        <img src="images/Screenshot 2018-08-18 08.02.39.simongame.png" alt="Simon Game">
+                        <p>Flip the card for more detail.</p>
+                        <div class="card-button">
+                            <button onclick="flipBox('box3_front', 'box3_back')">Flip</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- explore SVG -->
-            <div class="flip3D">
-                <div class="card back slow" id="box6_back">
-                    <h3>Explore SVG</h3>
-                    <p>I recreated simon game which runs in a browser. As the game progresses there are various aspects of the GUI which change, The color of the title on the game "console" changes, and a number shows the length of the sequence. There is also an option to change the set of sounds. Two are implemented at present but other sets can be added. If an error occurs "Err" is displayed and a short tune is played using the current sound set.</p>
-                    <table style="width:100%">
-                        <thead><th style="text-align: center" colspan="3">Technologies used</th></thead>
-                        <tr>
-                            <td width="33%">HTML</td>
-                            <td  width="33%">CSS</td>
-                            <td  width="33%">jQuery</td>
-                        </tr>
-                    </table>
-                    <a href="https://github.com/abonello/simon-game" target="_blank">Github Repository</a>
-                    <br>
-                    <a href="https://abonello.github.io/simon-game/" target="_blank">Deployment</a>
-                    <div class="card-button">
-                        <button onclick="flipBox('box6_front', 'box6_back')">Flip</button>
+            <div class="col-lg-6">
+                <!-- addition game -->
+                <div class="flip3D">
+                    <div class="card back slow" id="box4_back">
+                        <h3>Addition Game</h3>
+                        <p>This project's purpose is to explore how to get more than one user logged in at one time without interfeering. I used object-oriented design. I also used a JSON to store the data about the users and games played. Additionally, if a user is logged in and tries to log in somewhere else, be it a different tab on the same browser or a totally different device, the user will be warned and given the option to proceed, thus deleting the previous session or abort the current log in attempt. I also implemented storing the hashes for the passwords.</p>
+                        <table style="width:100%">
+                            <thead><th style="text-align: center" colspan="3">Technologies used</th></thead>
+                            <tr>
+                                <td width="25%">HTML</td>
+                                <td width="25%">CSS</td>
+                                <td width="25%">jQuery</td>
+                                <td width="25%">Bootstrap</td>
+                            </tr>
+                            <tr>
+                                <td width="25%">Python</td>
+                                <td width="25%">Flask</td>
+                                <td width="25%">Jinja</td>
+                                <td width="25%">JSON</td>  
+                            </tr>
+                            <tr>
+                                <td colspan="2"><a href="https://github.com/abonello/addition_game" target="_blank">Github Repository</a></td>
+                                <td colspan="2"><a href="http://my-addition-game.herokuapp.com/" target="_blank">Deployment on Heroku</a></td>
+                            </tr>
+                        </table>
+                        <div class="card-button">
+                            <button onclick="flipBox('box4_front', 'box4_back')">Flip</button>
+                        </div>
+                    </div>
+                    <div class="card front slow" id="box4_front">
+                        <h3>Addition Game</h3>
+                        <p>An experimental site to get multiple users logged in.</p>
+                        <img src="images/Screenshot 2018-08-18 11.56.57.additiongame.png" alt="addition game">
+                        <p>Flip the card for more detail.</p>
+                        <div class="card-button">
+                            <button onclick="flipBox('box4_front', 'box4_back')">Flip</button>
+                        </div>
                     </div>
                 </div>
-                <div class="card front slow" id="box6_front">
-                    <h3>Explore SVG</h3>
-                    <p>This is a remake of the classical Simon game.</p>
-                    <img src="images/Screenshot 2018-08-18 08.02.39.simongame.png" alt="anthonybonello.co.uk">
-                    <p>Flip the card for more detail.</p>
-                    <div class="card-button">
-                        <button onclick="flipBox('box6_front', 'box6_back')">Flip</button>
+            </div>
+            
+            <div class="col-lg-6">
+                <!-- webapp - audio -->
+                <div class="flip3D">
+                    <div class="card back slow" id="box5_back">
+                        <h3>WebApp Audio</h3>
+                        <p>I recreated simon game which runs in a browser. As the game progresses there are various aspects of the GUI which change, The color of the title on the game "console" changes, and a number shows the length of the sequence. There is also an option to change the set of sounds. Two are implemented at present but other sets can be added. If an error occurs "Err" is displayed and a short tune is played using the current sound set.</p>
+                        <table style="width:100%">
+                            <thead><th style="text-align: center" colspan="3">Technologies used</th></thead>
+                            <tr>
+                                <td width="33%">HTML</td>
+                                <td  width="33%">CSS</td>
+                                <td  width="33%">jQuery</td>
+                            </tr>
+                        </table>
+                        <a href="https://github.com/abonello/simon-game" target="_blank">Github Repository</a>
+                        <br>
+                        <a href="https://abonello.github.io/simon-game/" target="_blank">Deployment</a>
+                        <div class="card-button">
+                            <button onclick="flipBox('box5_front', 'box5_back')">Flip</button>
+                        </div>
+                    </div>
+                    <div class="card front slow" id="box5_front">
+                        <h3>WebApp Audio</h3>
+                        <p>This is a remake of the classical Simon game.</p>
+                        <img src="images/Screenshot 2018-08-18 08.02.39.simongame.png" alt="anthonybonello.co.uk">
+                        <p>Flip the card for more detail.</p>
+                        <div class="card-button">
+                            <button onclick="flipBox('box5_front', 'box5_back')">Flip</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <!-- explore SVG -->
+                <div class="flip3D">
+                    <div class="card back slow" id="box6_back">
+                        <h3>Explore SVG</h3>
+                        <p>I recreated simon game which runs in a browser. As the game progresses there are various aspects of the GUI which change, The color of the title on the game "console" changes, and a number shows the length of the sequence. There is also an option to change the set of sounds. Two are implemented at present but other sets can be added. If an error occurs "Err" is displayed and a short tune is played using the current sound set.</p>
+                        <table style="width:100%">
+                            <thead><th style="text-align: center" colspan="3">Technologies used</th></thead>
+                            <tr>
+                                <td width="33%">HTML</td>
+                                <td  width="33%">CSS</td>
+                                <td  width="33%">jQuery</td>
+                            </tr>
+                        </table>
+                        <a href="https://github.com/abonello/simon-game" target="_blank">Github Repository</a>
+                        <br>
+                        <a href="https://abonello.github.io/simon-game/" target="_blank">Deployment</a>
+                        <div class="card-button">
+                            <button onclick="flipBox('box6_front', 'box6_back')">Flip</button>
+                        </div>
+                    </div>
+                    <div class="card front slow" id="box6_front">
+                        <h3>Explore SVG</h3>
+                        <p>This is a remake of the classical Simon game.</p>
+                        <img src="images/Screenshot 2018-08-18 08.02.39.simongame.png" alt="anthonybonello.co.uk">
+                        <p>Flip the card for more detail.</p>
+                        <div class="card-button">
+                            <button onclick="flipBox('box6_front', 'box6_back')">Flip</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -327,7 +338,7 @@
                     <td>HTML CSS JavaScript WebAudioAPI</td>
                     <td>It should work in all browsers that support WebAudio API like Firefox and Chrome.</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th><a href="http://my-addition-game.herokuapp.com/">Addition Game</a></th>
                     <td>-</td>
                     <td>HTML CSS jQuery Bootstrap Python Flask Jinja JSON</td>
@@ -337,7 +348,7 @@
                         somewhere else, be it a different tab on the same browser or a totally different device, 
                         the user will be warned and given the option to proceed, thus deleting the previous session
                         or abort the current log in attempt.</td>
-                </tr>
+                </tr> -->
                 <!--tr>
                     <th>-</th>
                     <td>-</td>
