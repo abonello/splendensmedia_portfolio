@@ -125,7 +125,7 @@
                 <div class="card front slow" id="box2_front">
                     <h3>Charlie Chaplin</h3>
                     <p>Tribute page to Charlie Chaplin and his work.</p>
-                    <img src="images/Screenshot 2018-08-17 16.07.48.chaliechaplin.png" alt="anthonybonello.co.uk">
+                    <img src="images/Screenshot 2018-08-17 16.07.48.chaliechaplin.png" alt="charlie chaplin tribute site">
                     <p>Flip the card for more detail.</p>
                     <div class="card-button">
                         <button onclick="flipBox('box2_front', 'box2_back')">Flip</button>
@@ -155,7 +155,7 @@
                 <div class="card front slow" id="box3_front">
                     <h3>Simon Game</h3>
                     <p>This is a remake of the classical Simon game.</p>
-                    <img src="images/Screenshot 2018-08-18 08.02.39.simongame.png" alt="anthonybonello.co.uk">
+                    <img src="images/Screenshot 2018-08-18 08.02.39.simongame.png" alt="Simon Game">
                     <p>Flip the card for more detail.</p>
                     <div class="card-button">
                         <button onclick="flipBox('box3_front', 'box3_back')">Flip</button>
@@ -166,26 +166,36 @@
             <div class="flip3D">
                 <div class="card back slow" id="box4_back">
                     <h3>Addition Game</h3>
-                    <p>I recreated simon game which runs in a browser. As the game progresses there are various aspects of the GUI which change, The color of the title on the game "console" changes, and a number shows the length of the sequence. There is also an option to change the set of sounds. Two are implemented at present but other sets can be added. If an error occurs "Err" is displayed and a short tune is played using the current sound set.</p>
+                    <p>This project's purpose is to explore how to get more than one user logged in at one time without interfeering. I used object-oriented design. I also used a JSON to store the data about the users and games played. Additionally, if a user is logged in and tries to log in somewhere else, be it a different tab on the same browser or a totally different device, the user will be warned and given the option to proceed, thus deleting the previous session or abort the current log in attempt. I also implemented storing the hashes for the passwords.</p>
                     <table style="width:100%">
                         <thead><th style="text-align: center" colspan="3">Technologies used</th></thead>
                         <tr>
-                            <td width="33%">HTML</td>
-                            <td  width="33%">CSS</td>
-                            <td  width="33%">jQuery</td>
+                            <td width="25%">HTML</td>
+                            <td width="25%">CSS</td>
+                            <td width="25%">jQuery</td>
+                            <td width="25%">Bootstrap</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">Python</td>
+                            <td width="25%">Flask</td>
+                            <td width="25%">Jinja</td>
+                            <td width="25%">JSON</td>  
+                        </tr>
+                        <tr>
+                            <td colspan="2"><a href="https://github.com/abonello/addition_game" target="_blank">Github Repository</a></td>
+                            <td colspan="2"><a href="http://my-addition-game.herokuapp.com/" target="_blank">Deployment on Heroku</a></td>
                         </tr>
                     </table>
-                    <a href="https://github.com/abonello/simon-game" target="_blank">Github Repository</a>
-                    <br>
-                    <a href="https://abonello.github.io/simon-game/" target="_blank">Deployment</a>
+
+                    
                     <div class="card-button">
                         <button onclick="flipBox('box4_front', 'box4_back')">Flip</button>
                     </div>
                 </div>
                 <div class="card front slow" id="box4_front">
                     <h3>Addition Game</h3>
-                    <p>This is a remake of the classical Simon game.</p>
-                    <img src="images/Screenshot 2018-08-18 08.02.39.simongame.png" alt="anthonybonello.co.uk">
+                    <p>An experimental site to get multiple users logged in.</p>
+                    <img src="images/Screenshot 2018-08-18 11.56.57.additiongame.png" alt="addition game">
                     <p>Flip the card for more detail.</p>
                     <div class="card-button">
                         <button onclick="flipBox('box4_front', 'box4_back')">Flip</button>
