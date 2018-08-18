@@ -17,7 +17,7 @@ body {
     background: #898;
     top: 0;
     width: 100vw;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     box-shadow:  0 0 5px #e4f2d1, 0 0 15px #e8e8de;
     z-index: 1;
 }
@@ -25,7 +25,7 @@ body {
 header h1 {
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 46px;
-    margin: 50px auto 30px auto;
+    margin: 20px auto 10px auto; /* 50a30a */
     text-align: center;
 }
 
