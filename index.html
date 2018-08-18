@@ -172,7 +172,7 @@
                         <h3>Addition Game</h3>
                         <p>This project's purpose is to explore how to get more than one user logged in at one time without interfeering. I used object-oriented design. I also used a JSON to store the data about the users and games played. Additionally, if a user is logged in and tries to log in somewhere else, be it a different tab on the same browser or a totally different device, the user will be warned and given the option to proceed, thus deleting the previous session or abort the current log in attempt. I also implemented storing the hashes for the passwords.</p>
                         <table style="width:100%">
-                            <thead><th style="text-align: center" colspan="3">Technologies used</th></thead>
+                            <thead><th style="text-align: center" colspan="4">Technologies used</th></thead>
                             <tr>
                                 <td width="25%">HTML</td>
                                 <td width="25%">CSS</td>
@@ -205,32 +205,35 @@
                     </div>
                 </div>
             </div>
-            
             <div class="col-lg-6">
                 <!-- webapp - audio -->
                 <div class="flip3D">
                     <div class="card back slow" id="box5_back">
                         <h3>WebApp Audio</h3>
-                        <p>I recreated simon game which runs in a browser. As the game progresses there are various aspects of the GUI which change, The color of the title on the game "console" changes, and a number shows the length of the sequence. There is also an option to change the set of sounds. Two are implemented at present but other sets can be added. If an error occurs "Err" is displayed and a short tune is played using the current sound set.</p>
+                        <p>WebAudio API is a way of creating sound directly in the browser. In this way there is no need to load audio. It should work in all browsers that support WebAudio API like Firefox and Chrome.</p>
+                        <br>
+                        <br>
+                        <br>
                         <table style="width:100%">
-                            <thead><th style="text-align: center" colspan="3">Technologies used</th></thead>
+                            <thead><th style="text-align: center" colspan="4">Technologies used</th></thead>
                             <tr>
-                                <td width="33%">HTML</td>
-                                <td  width="33%">CSS</td>
-                                <td  width="33%">jQuery</td>
+                                <td width="25%">HTML</td>
+                                <td  width="25%">CSS</td>
+                                <td  width="25%">javascript</td>
+                                <td  width="25%">Web Audio API</td>
                             </tr>
                         </table>
-                        <a href="https://github.com/abonello/simon-game" target="_blank">Github Repository</a>
+                        <a href="https://github.com/abonello/splendensmedia_portfolio" target="_blank">Github Repository</a>
                         <br>
-                        <a href="https://abonello.github.io/simon-game/" target="_blank">Deployment</a>
+                        <a href="https://abonello.github.io/splendensmedia_portfolio/MyAS002.html" target="_blank">Deployment</a>
                         <div class="card-button">
                             <button onclick="flipBox('box5_front', 'box5_back')">Flip</button>
                         </div>
                     </div>
                     <div class="card front slow" id="box5_front">
                         <h3>WebApp Audio</h3>
-                        <p>This is a remake of the classical Simon game.</p>
-                        <img src="images/Screenshot 2018-08-18 08.02.39.simongame.png" alt="anthonybonello.co.uk">
+                        <p>Experiment with Web Audio API.</p>
+                        <img src="images/Screenshot 2018-08-18 19.03.03.webappaudio.png" alt="web audio api">
                         <p>Flip the card for more detail.</p>
                         <div class="card-button">
                             <button onclick="flipBox('box5_front', 'box5_back')">Flip</button>
@@ -332,12 +335,12 @@
                     <td>-</td>
                     <td>-</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th><a href="MyAS002.html">WebAudio App</a></th>
                     <td>-</td>
                     <td>HTML CSS JavaScript WebAudioAPI</td>
                     <td>It should work in all browsers that support WebAudio API like Firefox and Chrome.</td>
-                </tr>
+                </tr> -->
                 <!-- <tr>
                     <th><a href="http://my-addition-game.herokuapp.com/">Addition Game</a></th>
                     <td>-</td>
