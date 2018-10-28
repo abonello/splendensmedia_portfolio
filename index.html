@@ -65,13 +65,12 @@
     </header>
     
     <div class="container main">
-            
         <div class="row">
             <heading class="sectionTitle"><h2>The following are some examples of web pages that I have developed</h2>
                 <p>They are part of my web development portfolio:</p>
             </heading>
+            <!-- anthonybonello.co.uk -->
             <div class="col-lg-6">
-                <!-- anthonybonello.co.uk -->
                 <div class="flip3D">
                     <div class="card back slow" id="box1_back">
                         <h3>Independent Music Professional</h3>
@@ -102,10 +101,119 @@
                     </div>
                 </div>
             </div>
+            <!-- riddle-me this game -->
             <div class="col-lg-6">
-                <!-- charlie chaplin -->
                 <div class="flip3D">
                     <div class="card back slow" id="box2_back">
+                        <h3>Riddle Me This Game</h3>
+                        <p>The purpose of the game is to guess a word or phrase from a given picture similar to Pictionary. Three attempts are allowed. With each subsequent attempt, further clues will be shown at the expense of reduced points. Once you log in you'll be taken to your user page where you can see a list of games you played and the points gained. A Hall of Fame keeps track of the best 10 results obtained for a single game and another for total points gained by users over all the games they played.</p>
+
+                        <table style="width:100%">
+                            <thead>
+                                <th style="text-align: center" colspan="4">Technologies used</th>
+                            </thead>
+                            <tr>
+                                <td width="25%">HTML</td>
+                                <td width="25%">CSS</td>
+                                <td width="25%">jQuery</td>
+                                <td width="25%">Bootstrap</td>
+                            </tr>
+                            <tr>
+                                <td width="25%">p5.js</td>
+                                <td width="25%">Python</td>
+                                <td width="25%">Flask</td>
+                                <td width="25%">flask_mail</td>
+                            </tr>
+                            <tr>
+                                <td width="25%">Jinja</td>
+                                <td width="25%">JSON</td>
+                                <td width="25%">OOP</td>
+                                <td width="25%">unit testing</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><a href="https://github.com/abonello/project-3" target="_blank">Github Repository</a></td>
+                                <td colspan="2"><a href="https://riddlegame-ab.herokuapp.com/" target="_blank">Deployment on Heroku</a></td>
+                            </tr>
+                            
+                        </table>
+                        <div class="card-button">
+                            <button onclick="flipBox('box2_front', 'box2_back')">Flip</button>
+                        </div>
+                    </div>
+                    <div class="card front slow" id="box2_front">
+                        <h3>Riddle Me This Game</h3>
+                        <p>This is a pictionary like game.</p>
+                        <img src="images/Screenshot 2018-10-28 13.32.42.png" alt="riddle me this game">
+                        <p>Flip the card for more detail.</p>
+                        <div class="card-button">
+                            <button onclick="flipBox('box2_front', 'box2_back')">Flip</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Nutrition Value App -->
+            <div class="col-lg-6">
+                <div class="flip3D">
+                    <div class="card back slow" id="box3_back">
+                        <h3>Nutrition Value App</h3>
+                        <p> This web app allows you to explore the nutritional value of various food items. The user can filter by using the interactive d3.js graphs.
+                            All CRUD functionality is available for the data which is held in a MongoDB database.
+                            <br>
+                            More information available in the About page and in the README.md which can be found in the git repository.
+                        </p>
+                        <table style="width:100%">
+                            <thead>
+                                <th style="text-align: center" colspan="4">Technologies used</th>
+                            </thead>
+                            <tr>
+                                <td width="25%">HTML</td>
+                                <td width="25%">CSS</td>
+                                <td width="25%">jQuery</td>
+                                <td width="25%">Bootstrap</td>
+                            </tr>
+                            <tr>
+                                <td width="25%">d3.js</td>
+                                <td width="25%">crossfilter</td>
+                                <td width="25%">dc.js</td>
+                                <td width="25%">Python</td>
+                                
+                            </tr>
+                            <tr>
+                                <td width="25%">Flask</td>
+                                <td width="25%">flask_mail</td>
+                                <td width="25%">flask_pymongo</td>
+                            </tr>
+                            <tr>
+                                <td width="25%">Jinja</td>
+                                <td width="25%">MongoDB</td>
+                                <td width="25%">unit testing</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><a href="https://github.com/abonello/food_nutrition" target="_blank">Github Repository</a></td>
+                                <td colspan="2"><a href="https://food-nutrition.herokuapp.com/" target="_blank">Deployment on Heroku</a></td>
+                            </tr>
+                        </table>
+                        <div class="card-button">
+                            <button onclick="flipBox('box3_front', 'box3_back')">Flip</button>
+                        </div>
+                    </div>
+                    <div class="card front slow" id="box3_front">
+                        <h3>Nutrition Value App</h3>
+                        <p>This web app keeps tab of the nutritional value of the food I eat.</p>
+                        <img src="images/Screenshot 2018-10-28 14.38.59.png" alt="Nutrition Web App">
+                        <p>Flip the card for more detail.</p>
+                        <div class="card-button">
+                            <button onclick="flipBox('box3_front', 'box3_back')">Flip</button>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            <!-- charlie chaplin -->
+            <div class="col-lg-6">
+                <div class="flip3D">
+                    <div class="card back slow" id="box4_back">
                         <h3>Charlie Chaplin</h3>
                         <p>I built this tribute page as a practice in controlling the flow of content using jQuery. It is based on a codepen exercise. An important feature of this page is the film strip which moves in opposite direction to the page.</p>
                         <p><strong>Technologies used</strong></p>
@@ -119,24 +227,24 @@
                         <br>
                         <a href="http://www.chaplin.anthonybonello.co.uk" target="_blank">Deployment</a>
                         <div class="card-button">
-                            <button onclick="flipBox('box2_front', 'box2_back')">Flip</button>
+                            <button onclick="flipBox('box4_front', 'box4_back')">Flip</button>
                         </div>
                     </div>
-                    <div class="card front slow" id="box2_front">
+                    <div class="card front slow" id="box4_front">
                         <h3>Charlie Chaplin</h3>
                         <p>Tribute page to Charlie Chaplin and his work.</p>
                         <img src="images/Screenshot 2018-08-17 16.07.48.chaliechaplin.png" alt="charlie chaplin tribute site">
                         <p>Flip the card for more detail.</p>
                         <div class="card-button">
-                            <button onclick="flipBox('box2_front', 'box2_back')">Flip</button>
+                            <button onclick="flipBox('box4_front', 'box4_back')">Flip</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- simon game -->
             <div class="col-lg-6">
-                <!-- simon game -->
                 <div class="flip3D">
-                    <div class="card back slow" id="box3_back">
+                    <div class="card back slow" id="box5_back">
                         <h3>Simon Game</h3>
                         <p>I recreated simon game which runs in a browser. As the game progresses there are various aspects of the GUI which change, The color of the title on the game "console" changes, and a number shows the length of the sequence. There is also an option to change the set of sounds. Two are implemented at present but other sets can be added. If an error occurs "Err" is displayed and a short tune is played using the current sound set.</p>
                         <table style="width:100%">
@@ -151,24 +259,24 @@
                         <br>
                         <a href="https://abonello.github.io/simon-game/" target="_blank">Deployment</a>
                         <div class="card-button">
-                            <button onclick="flipBox('box3_front', 'box3_back')">Flip</button>
+                            <button onclick="flipBox('box5_front', 'box5_back')">Flip</button>
                         </div>
                     </div>
-                    <div class="card front slow" id="box3_front">
+                    <div class="card front slow" id="box5_front">
                         <h3>Simon Game</h3>
                         <p>This is a remake of the classical Simon game.</p>
                         <img src="images/Screenshot 2018-08-18 08.02.39.simongame.png" alt="Simon Game">
                         <p>Flip the card for more detail.</p>
                         <div class="card-button">
-                            <button onclick="flipBox('box3_front', 'box3_back')">Flip</button>
+                            <button onclick="flipBox('box5_front', 'box5_back')">Flip</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- addition game -->
             <div class="col-lg-6">
-                <!-- addition game -->
                 <div class="flip3D">
-                    <div class="card back slow" id="box4_back">
+                    <div class="card back slow" id="box6_back">
                         <h3>Addition Game</h3>
                         <p>This project's purpose is to explore how to get more than one user logged in at one time without interfeering. I used object-oriented design. I also used a JSON to store the data about the users and games played. Additionally, if a user is logged in and tries to log in somewhere else, be it a different tab on the same browser or a totally different device, the user will be warned and given the option to proceed, thus deleting the previous session or abort the current log in attempt. I also implemented storing the hashes for the passwords.</p>
                         <table style="width:100%">
@@ -191,24 +299,24 @@
                             </tr>
                         </table>
                         <div class="card-button">
-                            <button onclick="flipBox('box4_front', 'box4_back')">Flip</button>
+                            <button onclick="flipBox('box6_front', 'box6_back')">Flip</button>
                         </div>
                     </div>
-                    <div class="card front slow" id="box4_front">
+                    <div class="card front slow" id="box6_front">
                         <h3>Addition Game</h3>
                         <p>An experimental site to get multiple users logged in.</p>
                         <img src="images/Screenshot 2018-08-18 11.56.57.additiongame.png" alt="addition game">
                         <p>Flip the card for more detail.</p>
                         <div class="card-button">
-                            <button onclick="flipBox('box4_front', 'box4_back')">Flip</button>
+                            <button onclick="flipBox('box6_front', 'box6_back')">Flip</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- webapp - audio -->
             <div class="col-lg-6">
-                <!-- webapp - audio -->
                 <div class="flip3D">
-                    <div class="card back slow" id="box5_back">
+                    <div class="card back slow" id="box7_back">
                         <h3>WebApp Audio</h3>
                         <p>WebAudio API is a way of creating sound directly in the browser. In this way there is no need to load audio. It should work in all browsers that support WebAudio API like Firefox and Chrome.</p>
                         <br>
@@ -227,24 +335,24 @@
                         <br>
                         <a href="https://abonello.github.io/splendensmedia_portfolio/MyAS002.html" target="_blank">Deployment</a>
                         <div class="card-button">
-                            <button onclick="flipBox('box5_front', 'box5_back')">Flip</button>
+                            <button onclick="flipBox('box7_front', 'box7_back')">Flip</button>
                         </div>
                     </div>
-                    <div class="card front slow" id="box5_front">
+                    <div class="card front slow" id="box7_front">
                         <h3>WebApp Audio</h3>
                         <p>Experiment with Web Audio API.</p>
                         <img src="images/Screenshot 2018-08-18 19.03.03.webappaudio.png" alt="web audio api">
                         <p>Flip the card for more detail.</p>
                         <div class="card-button">
-                            <button onclick="flipBox('box5_front', 'box5_back')">Flip</button>
+                            <button onclick="flipBox('box7_front', 'box7_back')">Flip</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- explore SVG -->
             <div class="col-lg-6">
-                <!-- explore SVG -->
                 <div class="flip3D">
-                    <div class="card back slow" id="box6_back">
+                    <div class="card back slow" id="box8_back">
                         <h3>Explore SVG</h3>
                         <p>Apart from creating static images with svg, we can also animate those images. The           animation in this case is achieved completely using CSS.<br>
                             Canvas which is a way to build scalable vector graphics is a very important building block of graphs used by other libraries such as d3.js. In combination with crossfilter and DC.js these technologies can be very powerful in data analysis and display. </p>
@@ -262,16 +370,16 @@
                         <br>
                         <a href="https://abonello.github.io/CanvasExplore/" target="_blank">Deployment</a>
                         <div class="card-button">
-                            <button onclick="flipBox('box6_front', 'box6_back')">Flip</button>
+                            <button onclick="flipBox('box8_front', 'box8_back')">Flip</button>
                         </div>
                     </div>
-                    <div class="card front slow" id="box6_front">
+                    <div class="card front slow" id="box8_front">
                         <h3>Explore SVG</h3>
                         <p>An experiment with creating images with svg.</p>
                         <img src="images/Screenshot 2018-08-18 19.28.16.exploresvg.png" alt="explore svg">
                         <p>Flip the card for more detail.</p>
                         <div class="card-button">
-                            <button onclick="flipBox('box6_front', 'box6_back')">Flip</button>
+                            <button onclick="flipBox('box8_front', 'box8_back')">Flip</button>
                         </div>
                     </div>
                 </div>
