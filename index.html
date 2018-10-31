@@ -50,8 +50,15 @@
     <header class="container-fluid main-header">
     <!--<header class="container-fluid">-->
         <div class="row">
-            <div class="hidden-xs hidden-sm col-md-2 "></div>
-            <div class="col-xs-12 col-sm-9 col-md-8">
+            <!-- <div class="hidden-xs hidden-sm col-md-2 "> -->
+            <div class="hidden-xs col-sm-2 col-md-2 ">
+                <!-- Button trigger modal -->
+                <figure type="button" class="btn" data-toggle="modal" data-target="#myModal">
+                    <img id="hackIcon" src="images/Halloween-Hackathon-1st_A_icon.png" alt="hackathon icon">
+                </figure>
+            </div>
+            <!-- <div class="col-xs-12 col-sm-9 col-md-8"> -->
+            <div class="col-xs-12 col-sm-7 col-md-8">
                 <h1><span style="font-size:48px;">Anthony Bonello</span></h1>
                 <h2>FullStack Webdesign</h2>
                 <p><b>This website is updated regularly.</b></p>
@@ -65,6 +72,42 @@
     </header>
     
     <div class="container main">
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Code Institute, Halloween Hackathon 2018</h4>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <img id="hackathonImage" src="images/Halloween-Hackathon-1st_A.png" alt="hackathon image">
+                        </figure>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <a href="https://github.com/abonello/The-Monstars" target="_blank">
+                                    <h3>Github Repository</h3>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <a href="https://abonello.github.io/The-Monstars/" target="_blank">
+                                    <h3>Deployment</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <p><strong>Main feature: </strong>Ghost moves on hover. Please visit deployment to view.</p>
+                    </div>
+                    <!-- <div class="modal-footer"> -->
+                        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <!-- </div> -->
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
         <div class="row">
             <heading class="sectionTitle"><h2>The following are some examples of web pages that I have developed</h2>
                 <p>They are part of my web development portfolio:</p>
